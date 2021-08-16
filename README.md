@@ -1,6 +1,6 @@
 # fixed-point
-Krasnoselskii-Mannアルゴリズムの実装例です。
-Krasnoselskii-Mannアルゴリズムは以下のようなアルゴリズムです。ただし、Tは非拡大写像です。
+Krasnosel'skii-Mannアルゴリズムの実装例です。
+Krasnosel'skii-Mannアルゴリズムは以下のようなアルゴリズムです。ただし、Tは非拡大写像です。
 
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?x_{k&plus;1}&space;=&space;\alpha&space;x_k&space;&plus;(1-\alpha)T(x_k)">
@@ -22,10 +22,14 @@ python3 src/main.py
 </p>
   
 の二つです。
-比較するアルゴリズムの詳細は、コードを参照してください。
+比較するアルゴリズムは以下の4種類です。
 
+<p align="center">
+  <img src="https://latex.codecogs.com/gif.latex?\\&space;\text{KM0}:&space;\quad&space;\alpha&space;=&space;0.5,&space;\,&space;T&space;=&space;T_1&space;\\&space;\text{KM1}:&space;\quad&space;\alpha&space;=&space;0.5,&space;\,&space;T&space;=&space;T_2,&space;\,&space;w_2&space;=&space;w_3&space;=&space;w_4&space;=&space;1/3&space;\\&space;\text{KM2}:&space;\quad&space;\alpha&space;=&space;0.9,&space;\,&space;T&space;=&space;T_1&space;\\&space;\text{KM3}:&space;\quad&space;\alpha&space;=&space;0.9,&space;\,&space;T&space;=&space;T_2,&space;\,&space;w_2&space;=&space;w_3&space;=&space;w_4&space;=&space;1/3">
+</p>
+  
 ### 実行結果
-サンプルプログラムの問題の4つの閉球とKrasnoselskii-Mannアルゴリズムにより生成された点列を2次元平面に描画した結果です。
+サンプルプログラムの問題の4つの閉球とKrasnosel'skii-Mannアルゴリズムにより生成された点列を2次元平面に描画した結果です。
 反復回数は30回としています。
 
 ![fig1](./img/fig1.jpg)
